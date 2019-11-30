@@ -1,7 +1,8 @@
 # node-pcsclite
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/santigimeno/node-pcsclite?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Bindings over pcsclite to access Smart Cards. Starting with version **0.4.0** it works in **Linux**, **OS X** and **Windows**.
+**Note: forked but detached from https://github.com/santigimeno/node-pcsclite**
+
+Bindings over pcsclite to access Smart Cards. Starting with version **0.4.0** it works in **Linux**, **OS X** and **Windows**. As of **0.7.0** support for [this RPi toolchain](https://github.com/flomio/passninja-rpi-toolchain) for **Linux CCTarget** has been added. 
 
 ## Installation
 
