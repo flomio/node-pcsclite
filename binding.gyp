@@ -17,8 +17,8 @@
                     'conditions': [
                         ['OS=="linux"', {
                             'link_settings': {
-                                'libraries': [ '--sysroot=/home/develop/rootfs' ],
-                                'library_dirs': [ '/home/develop/rootfs/usr/lib/arm-linux-gnueabihf' ]
+                                'libraries': [ '--sysroot=$(SYS_ROOT)' ],
+                                'library_dirs': [ '$(SYS_ROOT)/usr/lib/$(HOST)' ]
                             }
                         }]
                     ]
