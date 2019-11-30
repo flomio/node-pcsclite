@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "bindings": "^1.1.0",
-    "nan": "^2.2.1"
+    "nan": "^2.2.1",
+    "node-gyp": "^6.0.1"
   },
   "devDependencies": {
     "mocha": "~1.11.0",
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "install": "node-gyp rebuild"
+    "build": "./node_modules/node-gyp/bin/node-gyp.js rebuild"
   },
   "repository": "https://github.com/santigimeno/node-pcsclite.git",
   "keywords": [

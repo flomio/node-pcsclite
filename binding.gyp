@@ -13,6 +13,16 @@
                 '-pedantic'
               ],
             'conditions': [
+                ['target_arch=="arm"', {
+                    'conditions': [
+                        ['OS=="linux"', {
+                            'link_settings': {
+                                'libraries': [ '--sysroot=/home/develop/rootfs' ],
+                                'library_dirs': [ '/home/develop/rootfs/usr/lib/arm-linux-gnueabihf' ]
+                            }
+                        }]
+                    ]
+                }], 
                 ['OS=="linux"', {
                     'include_dirs': [
                         '/usr/include/PCSC',
